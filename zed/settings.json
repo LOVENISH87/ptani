@@ -1,0 +1,143 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "hard_tabs": false,
+  "show_whitespaces": "none",
+  "disable_ai": true,
+  "languages": {
+    "JavaScript": {
+      "colorize_brackets": true
+    },
+    "C++": {
+      "prettier": {
+        "allowed": false
+      },
+      "use_on_type_format": false,
+      "ensure_final_newline_on_save": true,
+      "remove_trailing_whitespace_on_save": true,
+      "tab_size": 4,
+      "completions": {
+        "lsp_insert_mode": "insert"
+      },
+      "colorize_brackets": true,
+      "inlay_hints": {
+        "show_background": false,
+        "enabled": false
+      },
+      "show_whitespaces": "selection",
+      "format_on_save": "on",
+      "indent_guides": {
+        "background_coloring": "indent_aware",
+        "enabled": true
+      }
+    }
+  },
+  "prettier": {
+    "allowed": false
+  },
+  "helix_mode": false,
+  "toolbar": {
+    "code_actions": false,
+    "selections_menu": true,
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "scrollbar": {
+    "cursors": true
+  },
+  "gutter": {
+    "min_line_number_digits": 2
+  },
+  "hide_mouse": "never",
+  "agent": {
+    "dock": "left",
+    "model_parameters": []
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left",
+    "button": true
+  },
+  "outline_panel": {
+    "default_width": 300.0,
+    "dock": "left"
+  },
+  "buffer_line_height": "standard",
+  "buffer_font_weight": 400.0,
+  "git": {
+    "inline_blame": {
+      "padding": 6
+    }
+  },
+  "project_panel": {
+    "starts_open": true,
+    "auto_reveal_entries": true,
+    "folder_icons": true,
+    "file_icons": true,
+    "hide_gitignore": false,
+    "sticky_scroll": true,
+    "indent_size": 15.0,
+    "entry_spacing": "standard",
+    "default_width": 245.0,
+    "dock": "right"
+  },
+  "ui_font_family": "JetBrains Mono",
+  "vim_mode": false,
+  "terminal": {
+    "scrollbar": {
+      "show": "auto"
+    },
+    "toolbar": {
+      "breadcrumbs": false
+    },
+    "scroll_multiplier": 2.0,
+    "default_height": 320.0,
+    "cursor_shape": "block",
+    "font_weight": 431.0,
+    "shell": "system",
+    "font_size": 14.0,
+    "font_family": "JetBrains Mono Nerd Font",
+    "font_fallbacks": [
+      "monospace"
+    ]
+  },
+  "vertical_scroll_margin": 3.0,
+  "minimap": {
+    "max_width_columns": 80,
+    "show": "never"
+  },
+  "cursor_shape": "bar",
+  "cursor_blink": true,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 0
+    }
+  },
+  "buffer_font_family": "JetBrains Mono",
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "enabled": false
+  },
+  "soft_wrap": "none",
+  "base_keymap": "VSCode",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "VSCode Icons for Zed (Dark)"
+  },
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Dark",
+    "dark": "One Dark"
+  }
+}
