@@ -1,0 +1,3 @@
+function ll
+    nvim
+end
