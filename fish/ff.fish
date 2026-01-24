@@ -1,3 +1,3 @@
 function ff
-     fastfetch --logo void2
+     fastfetch --logo arch2
 end
