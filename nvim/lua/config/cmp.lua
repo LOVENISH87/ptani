@@ -5,7 +5,12 @@ cmp.setup({
   mapping = {
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
-        cmp.select_next_item()
+        local entry = cmp.get_selected_entry()
+        if entry then
+          cmp.confirm({ select = true })
+        else
+          cmp.select_next_item()
+        end
       elseif luasnip.expand_or_jumpable() then
         luasnip.expand_or_jump()
       else

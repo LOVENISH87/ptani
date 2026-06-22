@@ -15,6 +15,12 @@ return {
       console = {
         open_on_runcode = true,
       },
+
+      cn = { -- leetcode.cn
+        enabled = false, ---@type boolean
+        translator = true, ---@type boolean
+        translate_problems = true, ---@type boolean
+      },
     },
   },
 }

@@ -1,0 +1,189 @@
+{
+  "HTML5 Boilerplate": {
+    "prefix": "html5",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "  <meta charset=\"UTF-8\">",
+      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "  <title>${1:Document}</title>",
+      "</head>",
+      "<body>",
+      "  $0",
+      "</body>",
+      "</html>"
+    ],
+    "description": "HTML5 boilerplate"
+  },
+  "Div": {
+    "prefix": "div",
+    "body": [
+      "<div class=\"${1:class}\">",
+      "  $0",
+      "</div>"
+    ],
+    "description": "div element"
+  },
+  "Span": {
+    "prefix": "span",
+    "body": [
+      "<span class=\"${1:class}\">$0</span>"
+    ],
+    "description": "span element"
+  },
+  "Paragraph": {
+    "prefix": "p",
+    "body": [
+      "<p>$0</p>"
+    ],
+    "description": "paragraph"
+  },
+  "Anchor": {
+    "prefix": "a",
+    "body": [
+      "<a href=\"${1:url}\">${2:text}</a>"
+    ],
+    "description": "anchor tag"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": [
+      "<img src=\"${1:path}\" alt=\"${2:description}\">"
+    ],
+    "description": "image tag"
+  },
+  "Unordered List": {
+    "prefix": "ul",
+    "body": [
+      "<ul>",
+      "  <li>$0</li>",
+      "</ul>"
+    ],
+    "description": "unordered list"
+  },
+  "Ordered List": {
+    "prefix": "ol",
+    "body": [
+      "<ol>",
+      "  <li>$0</li>",
+      "</ol>"
+    ],
+    "description": "ordered list"
+  },
+  "List Item": {
+    "prefix": "li",
+    "body": [
+      "<li>$0</li>"
+    ],
+    "description": "list item"
+  },
+  "Table": {
+    "prefix": "table",
+    "body": [
+      "<table>",
+      "  <thead>",
+      "    <tr>",
+      "      <th>$0</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <td></td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>"
+    ],
+    "description": "table element"
+  },
+  "Form": {
+    "prefix": "form",
+    "body": [
+      "<form action=\"${1:action}\" method=\"${2:POST}\">",
+      "  $0",
+      "</form>"
+    ],
+    "description": "form element"
+  },
+  "Input": {
+    "prefix": "input",
+    "body": [
+      "<input type=\"${1:text}\" name=\"${2:name}\" placeholder=\"${3:placeholder}\">"
+    ],
+    "description": "input element"
+  },
+  "Button": {
+    "prefix": "button",
+    "body": [
+      "<button type=\"${1:button}\">${2:Click me}</button>"
+    ],
+    "description": "button element"
+  },
+  "Script": {
+    "prefix": "script",
+    "body": [
+      "<script>",
+      "  $0",
+      "</script>"
+    ],
+    "description": "script tag"
+  },
+  "Style": {
+    "prefix": "style",
+    "body": [
+      "<style>",
+      "  $0",
+      "</style>"
+    ],
+    "description": "style tag"
+  },
+  "Link": {
+    "prefix": "link",
+    "body": [
+      "<link rel=\"${1:stylesheet}\" href=\"${2:style.css}\">"
+    ],
+    "description": "link tag"
+  },
+  "Meta": {
+    "prefix": "meta",
+    "body": [
+      "<meta name=\"${1:name}\" content=\"${2:content}\">"
+    ],
+    "description": "meta tag"
+  },
+  "Class": {
+    "prefix": "class",
+    "body": [
+      "class=\"${1:classname}\""
+    ],
+    "description": "class attribute"
+  },
+  "ID": {
+    "prefix": "id",
+    "body": [
+      "id=\"${1:idname}\""
+    ],
+    "description": "id attribute"
+  },
+  "H1": {
+    "prefix": "h1",
+    "body": [
+      "<h1>$0</h1>"
+    ],
+    "description": "heading 1"
+  },
+  "H2": {
+    "prefix": "h2",
+    "body": [
+      "<h2>$0</h2>"
+    ],
+    "description": "heading 2"
+  },
+  "H3": {
+    "prefix": "h3",
+    "body": [
+      "<h3>$0</h3>"
+    ],
+    "description": "heading 3"
+  }
+}

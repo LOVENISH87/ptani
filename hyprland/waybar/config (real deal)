@@ -1,0 +1,208 @@
+; // ───────────────────────────────────────────────────────────────────
+; //  「✦ WAYBAR VERTICAL CONFIG ✦ 」
+; // ───────────────────────────────────────────────────────────────────
+
+; // ── BAR SETTINGS ───────────────────────────────────────────────────
+; {
+;   "layer": "top",
+;   "exclusive": true,
+;   "position": "left",
+;   "margin-right": 1,
+;   "reload_style_on_change": true,
+
+; // ── MODULES ────────────────────────────────────────────────────────
+;   "modules-left": [
+;     "hyprland/workspaces"
+;   ],
+
+;   "modules-right": [
+;     // "custom/pomo",
+;     "clock",
+;     "pulseaudio",
+;     "battery",
+;     "custom/power",
+;     "tray",
+;   ],
+
+; // ── WORKSPACES ─────────────────────────────────────────────────────
+;   "hyprland/workspaces": {
+;     "format": "{icon}",
+;     "format-icons": {
+;       "active": "",
+;       "default": "",
+;       "empty": ""
+;     },
+;     "persistent-workspaces": {
+;       "*": [1]
+;     }
+;   },
+
+;   "custom/pomo": {
+;     "exec": "~/.config/waybar/scripts/pomo.sh",
+;     "on-click": "~/.config/waybar/scripts/pomo.sh toggle",
+;     "interval": 1,
+;     "return-type": "json",
+;     "format": "{}"
+;   },
+
+; // ── CLOCK ──────────────────────────────────────────────────────────
+;   "clock": {
+;     "format": "{:%I\n%M\n%p}",
+;     "format-alt": "{:%a\n%d\n%b}",
+;     "tooltip": false
+;   },
+
+; // ── AUDIO ──────────────────────────────────────────────────────────
+;   "pulseaudio": {
+;     "format": "{icon}{volume}",
+;     "format-muted": "󰝟",
+;      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+;     "icon-size": 26,
+;     "scroll-step": 3,
+
+;     "format-icons": {
+;       "default": ["", "", ""]
+;     },
+    
+;     "tooltip": false
+;   },
+
+; // ── BATTERY ────────────────────────────────────────────────────────
+;   "battery": {
+;     "states": {
+;         "warning": 30,
+;         "critical": 15
+;     },
+;     "format": "{icon}{capacity}",
+;     "format-charging": "{capacity}",
+;     "format-icons": ["󰂃","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂"],
+;     "tooltip": false
+;   },
+
+;   "custom/power": {
+;   "format":"   ",
+;   "on-click": "wlogout",
+;   "tootip" : false
+; },
+
+; // ── TRAY ───────────────────────────────────────────────────────────
+;   "tray": {
+;     "spacing": 10,
+;     "icon-size": 26,
+;     "tooltip": false
+;   }
+  
+; }
+
+
+
+
+// ───────────────────────────────────────────────────────────────────
+//  「✦ WAYBAR CONFIG ✦ 」
+// ───────────────────────────────────────────────────────────────────
+
+// ── BAR SETTINGS ───────────────────────────────────────────────────
+{
+  "layer": "top",
+  "exclusive": true,
+  "position": "top",
+  "margin-top": 1,
+  "reload_style_on_change": true,
+  "on-sigusr1": "hide",
+	"on-sigusr2": "show",
+	"start_hidden": false,
+
+// ── MODULES ────────────────────────────────────────────────────────
+  
+  "modules-left" : [
+    "hyprland/workspaces",
+    "custom/autohide",
+    "custom/togglwaybar",
+  ],
+  "modules-center": [
+    
+    "clock",
+    "custom/pomo",
+    "pulseaudio",
+    "battery"
+  
+    
+   
+  ],
+  "modules-right":[
+     "custom/wlogout",
+     "tray",
+  ],
+// ── WORKSPACES ─────────────────────────────────────────────────────
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "empty": ""
+    },
+    "persistent-workspaces": {
+      "*": [1]
+    }
+  },
+  	"custom/autohide": {
+		"exec": "~/.config/waybar/Modules/WaybarAutoHide",
+		"interval": "once",
+	},
+
+// ── CLOCK ──────────────────────────────────────────────────────────
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "format-alt": "     {:%A, %d %B %Y}",
+    "tooltip": false
+  },
+
+// ── AUDIO ──────────────────────────────────────────────────────────
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+      //"default": ["", "", ""]
+    },
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+
+// ── BATTERY ────────────────────────────────────────────────────────
+  "battery": {
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "   {capacity}%",
+    "format-icons": ["󰂃","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂"],
+    "tooltip": false
+  },
+
+// ── POMODORO ───────────────────────────────────────────────────────
+  "custom/pomo": {
+    "exec": "~/.config/waybar/scripts/pomo.sh",
+    "on-click": "~/.config/waybar/scripts/pomo.sh toggle",
+    "interval": 1,
+    "return-type": "json",
+    "format": "    {}"
+  },
+
+// ── TRAY ───────────────────────────────────────────────────────────
+  "tray": {
+    "spacing": 20,
+    "tooltip": true,
+    "icon-size" : 21
+  }
+}
+"custom/togglwaybar": {
+  "exec": "~/.config/waybar/Modules/WaybarAutoHide module",
+  "interval": 1,
+  "format": "{}",
+  "return-type": "json",
+  "on-click": "~/.config/waybar/Modules/WaybarAutoHide toggle"
+}
+
+
+

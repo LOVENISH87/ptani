@@ -1,0 +1,87 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,"JetBrainsMono Nerd Font", sans-serif;
+  font-size: 18px;
+  border: none;
+  /* background: gray; */
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: rgb(172, 197, 255);        
+}
+
+.modules-center {
+  border-radius: 0px;
+  padding: 0px 1px;
+}
+
+/* WORKSPACES */
+
+#workspaces {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+#workspaces button {
+  padding: 1px 2px 3px 3px;
+  color: rgb(103, 158, 255);
+  transition: 0.3s ease;
+}
+
+#workspaces button:hover {
+  color: rgb(179, 82, 82);
+}
+
+#workspaces button.active {
+  color: rgb(255, 24, 63);
+}
+
+/* MODULES */
+
+#clock {
+  padding: 3px 2pc 3px 3pc;
+}
+
+#battery {
+  margin: 3px 4pc 1px 1pc;
+}
+
+#pulseaudio {
+  margin: 0px;
+  padding: 1px;
+}
+
+#custom-pomo {
+  padding: 0px 2pc 0px 1pc;
+}
+
+#tray {
+  padding: 1px 1pc 2px 1pc;
+}
+
+/* POMODORO */
+
+#custom-pomo {
+  color: rgb(56, 255, 185);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* POWER BUTTON */
+
+#custom-power {
+  color: #f5274d;
+  /* background: rgba(141, 3, 16, 0.723); */
+  padding: 3px 10px;
+  margin: 0 8px;
+  border-radius: 8px;
+  transition: background 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#custom-power:hover {
+  background: rgba(255, 70, 90, 0.15);
+  color: #ff0022;
+  box-shadow:
+    inset 0 0 6px rgba(255, 70, 90, 0.4),
+    0 0 10px rgba(255, 70, 90, 0.3);
+}

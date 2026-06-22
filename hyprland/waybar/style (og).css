@@ -1,0 +1,126 @@
+/* ───────────────────────────────────────────────────────────────────
+   「✦ WAYBAR STYLES ✦ 」
+   ──────────────────────────────────────────────────────────────── */
+
+/* ── IMPORTS ──────────────────────────────────────────────────────*/
+/* @import "../../.cache/wal/colors-waybar.css"; */
+
+/* ── GLOBAL ───────────────────────────────────────────────────────*/
+* {
+  /* font-family: "JetBrainsMono Nerd Font"; */
+   font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+/* font-weight: 800; */
+  font-size: 18px;
+  border: none;
+  border-radius: 0;
+  /* padding: 0px 2pc 0px 1pc; */
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent; 
+  color: rgb(172, 197, 255)
+}
+
+/* ── MODULES CONTAINER ────────────────────────────────────────────*/
+.modules-center { 
+  /* background: alpha(0.5); */
+  /* border: 1px solid #5E5E5E; */
+  border-radius: 10px;
+  padding:  0px 1px 1px 1px; 
+
+ }
+
+ 
+
+/* ── WORKSPACES ───────────────────────────────────────────────────*/
+#workspaces {
+  margin-right: 10px;
+  padding-right:10px;
+  /* border-right: 3px solid rgb(251, 251, 255);  */
+}
+
+#workspaces button {
+  padding: 1px 2px 3px 3px;
+  /* color: alpha(@color7, 0.4); */
+  color: rgb(125, 172, 255);
+  transition: 0.3s ease;
+}
+
+#workspaces button:hover {
+  background: none;
+  /* color: @foreground; */
+  color: red;
+  box-shadow: rgb(255, 255, 0);
+  text-shadow: none;
+}
+
+#workspaces button.active {
+  color: rgb(255, 133, 154);
+}
+
+/* ── MODULES ──────────────────────────────────────────────────────*/
+#clock{
+  padding: 3px 2pc 3px 3pc;
+}
+#battery{
+  margin: 3px 4pc 1px 1pc;
+}
+#pulseaudio{
+  margin: 0px;
+  padding: 1px;
+}
+
+#custom-pomo{
+  padding: 0px 2pc 0px 1pc;
+  margin: 0px;
+}
+#tray {
+  padding: 1px 1pc 2px 1pc;
+  margin: 0px;
+
+}
+#custom-wlogout {
+  padding: 3px 10px;
+  margin: 0 4px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+
+#clock:hover,
+#battery:hover,
+#pulseaudio:hover,
+#custom-pomo:hover {
+  /* background: alpha(rgb(226, 150, 150), 1); */
+  border-radius: 1px;
+  /* padding:1px;
+  margin: 1px; */
+}
+
+/* ── POMODORO ─────────────────────────────────────────────────────*/
+#custom-pomo {
+  color: alpha(rgb(181, 255, 229), 3);
+  /* font-weight: 00; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+#custom-wlogout {
+  color: #ff4d6d;
+  background: rgba(255, 70, 90, 0.1);
+  padding: 3px 10px;
+  margin: 0 4px;
+  border-radius: 8px;
+  transition: background 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#custom-wlogout:hover {
+  background: rgba(255, 70, 90, 0.15);
+  color: #ff7d8f;
+  box-shadow:
+    inset 0 0 6px rgba(255, 70, 90, 0.4),
+    0 0 10px rgba(255, 70, 90, 0.3);
+}

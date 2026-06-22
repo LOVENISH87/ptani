@@ -1,0 +1,17 @@
+{
+  "return": {
+    "prefix": "return",
+    "body": ["return $1;"],
+    "description": "Return statement"
+  },
+  "function": {
+    "prefix": "function",
+    "body": [
+      "function ${1:name}(${2:params}) {",
+      "    $3",
+      "    return $4;",
+      "}"
+    ],
+    "description": "Function definition"
+  }
+}

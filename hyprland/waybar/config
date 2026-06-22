@@ -1,0 +1,97 @@
+
+
+{
+  "layer": "top",
+  "exclusive": true,
+  "position": "top",
+  "margin-top": 1,
+  "reload_style_on_change": true,
+  "on-sigusr1": "hide",
+  "on-sigusr2": "show",
+  "start_hidden": false,
+
+  "modules-left": [
+    "hyprland/workspaces",
+
+    "custom/togglwaybar"
+  ],
+
+  "modules-center": [
+    "clock",
+    "custom/pomo",
+    "pulseaudio",
+    "battery"
+  ],
+
+  "modules-right": [
+    "tray",
+    "custom/power"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "empty": ""
+    },
+    "persistent-workspaces": {
+      "*": [1]
+    }
+  },
+
+ 
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "format-alt": "  {:%A, %d %B %Y}",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "{icon}     {volume}%",
+    "format-muted": " 󰝟 ",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "icon-size": 26,
+   
+    "tooltip": false
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-icons": [
+      "󰂃","󰁺","󰁻","󰁼","󰁽",
+      "󰁾","󰁿","󰂀","󰂁","󰂂"
+    ],
+    "tooltip": false
+  },
+
+  "custom/pomo": {
+    "exec": "~/.config/waybar/scripts/pomo.sh",
+    "on-click": "~/.config/waybar/scripts/pomo.sh toggle",
+    "interval": 1,
+    "return-type": "json",
+    "format": "󰞌 {}"
+  },
+
+  "tray": {
+    "spacing": 20,
+    "tooltip": false,
+    "icon-size": 26
+  },
+
+  "custom/power": {
+    "format": "",
+    "on-click": "wlogout",
+    "tooltip": false
+  },
+
+ 
+}

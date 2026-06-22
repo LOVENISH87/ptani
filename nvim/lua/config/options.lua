@@ -12,3 +12,10 @@ vim.opt.shortmess:append("A") -- Ignores the "ATTENTION" message about swap file
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
 vim.opt.scrolloff = 8
+
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+
+vim.opt.number = true
