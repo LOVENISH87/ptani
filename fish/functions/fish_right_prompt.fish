@@ -5,14 +5,14 @@ function fish_right_prompt
         end
     
         if not command -sq git
-                set_color normal
+                set_color --reset
                 return
         end
     
         # Get the git directory for later use.
         # Return if not inside a Git repository work tree.
         if not set -l git_dir (command git rev-parse --git-dir 2>/dev/null)
-                set_color normal
+                set_color --reset
                 return
         end
     
@@ -126,7 +126,7 @@ function fish_right_prompt
                 echo -n ' '(set_color yellow)"$commit"
         end
         if test -n "$action"
-                set_color normal
+                set_color --reset
                 echo -n (set_color white)':'(set_color -o brred)"$action"
         end
         if test $status_ahead -ne 0
@@ -157,5 +157,5 @@ function fish_right_prompt
                 echo -n ' '(set_color white)'◼'
         end
     
-        set_color normal
+        set_color --reset
 end
